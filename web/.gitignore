@@ -21,3 +21,4 @@ yarn-error.log*
 *.sw?
 
 sa-vue-admin.rar
+/package-lock.json

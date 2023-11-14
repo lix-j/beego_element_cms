@@ -1,7 +1,7 @@
 package admin
 
 import (
-	"github.com/beego/beego/v2/adapter/logs"
+	"github.com/beego/beego/v2/core/logs"
 	"github.com/beego/beego/v2/server/web"
 	"kaiyu-web/models"
 	"kaiyu-web/utils"
@@ -57,7 +57,7 @@ func (c *BaseController) Page(list interface{}, pager utils.Pager) {
 	c.ServeJSON()
 }
 
-//获取用户IP地址
+// 获取用户IP地址
 func (p *BaseController) getClientIp() string {
 	s := strings.Split(p.Ctx.Request.RemoteAddr, ":")
 	return s[0]
